@@ -19,6 +19,8 @@ body {
   background: rgb(37, 12, 61);
   top:0;
   right: 0;
+  transform: translateX(100%);
+  transition: all .3s ease-in-out;
 }
 
 .sidebar .sidebar-header{
@@ -51,4 +53,34 @@ width: 100px;
 
 .sidebar .links li{
   padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .links li a{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sidebar .links li a svg{
+  margin-left: 10px;
+}
+
+.sidebar-toggle{
+  position: absolute;
+  top:50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  color:#fff;
+  background:rgb(37, 12, 61); ;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
 }
